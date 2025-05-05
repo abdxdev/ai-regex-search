@@ -2,7 +2,7 @@
   "name": "ai-regex-search",
   "displayName": "AI Regex Search",
   "description": "Convert AI descriptions into regular expressions and search your code with AI assistance.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "abd-dev",
   "icon": "media/icon.png",
   "engines": {

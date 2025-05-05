@@ -1,71 +1,92 @@
-# ai-regex-search README
+<div align="center">
 
-This is the README for your extension "ai-regex-search". After writing up a brief description, we recommend including the following sections.
+<img src="media/icon.png" height="150" />
+
+<h1 align="center">AI Regex Search</h1>
+
+[![License](https://img.shields.io/github/license/abdxdev/ai-regex-search?style=flat-square&logo=GNU&label=License)](https://github.com/abdxdev/ai-regex-search/tree/main)
+[![GitHub Issues](https://img.shields.io/github/issues/abdxdev/ai-regex-search.svg?style=flat-square&label=Issues&color=FF70A7)](https://github.com/abdxdev/ai-regex-search/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/abdxdev/ai-regex-search.svg?style=flat-square&label=Last%20Commit&color=A06EE1)](https://github.com/abdxdev/ai-regex-search/tree/main)
+
+</div>
+
+AI Regex Search is a VS Code extension that converts natural language descriptions into regular expressions using Google's Gemini AI. Simply describe the pattern you want to find, and let AI generate the perfect regex for your search.
+
+![Demo](media/other/demo.gif)
+
+## Note
+
+To use the AI Regex Search extension:
+
+1. Get a Google Generative AI API key from [Google AI Studio](https://aistudio.google.com/apikey)
+2. Set the API key in the extension settings to enable regex generation
+3. Use the command palette to convert your descriptions into regex patterns
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- **AI-Powered Regex Generation:** Convert natural language descriptions into precise regular expressions
+- **VS Code Integration:** Automatically opens search with the generated regex pattern
+- **Multiple AI Models:** Choose from different Gemini models for optimal results
+- **Instant Search:** Generated patterns are immediately ready to use in VS Code's search
+- **Pattern Validation:** Ensures generated regex patterns are valid and VS Code-compatible
+- **User-Friendly:** No regex expertise required - just describe what you want to find
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- Visual Studio Code v1.60.0 or higher
+- A Google Generative AI API key from [Google AI Studio](https://aistudio.google.com/apikey)
+- Active internet connection for AI pattern generation
+
+## How to Use
+
+1. **Install and Setup:**
+   - Install the extension from VS Code Marketplace
+   - Configure your Gemini API key in VS Code settings
+   - Optionally select your preferred Gemini model
+
+2. **Generate Regex Patterns:**
+   - Open Command Palette (Ctrl+Shift+P / Cmd+Shift+P)
+   - Type "AI Regex Search: Convert AI Description to Regex"
+   - Enter your pattern description
+   - Watch as the AI generates your regex pattern
+
+3. **Search Your Code:**
+   - The Find dialog opens automatically with your pattern
+   - Regex mode is enabled by default
+   - Navigate through matches in your code
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+This extension provides the following settings:
 
-For example:
+- `abdxdev.geminiApiKey`: Your Google Generative AI API key
+- `abdxdev.geminiModel`: Model to use for pattern generation (default: gemini-2.0-flash-001)
 
-This extension contributes the following settings:
+## Commands
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+Access these commands through the Command Palette (Ctrl+Shift+P / Cmd+Shift+P):
 
-## Known Issues
+- **AI Regex Search: Convert AI Description to Regex** - Generate a regex pattern from your description
+- **abdxdev: Set Gemini API Key** - Configure your API key
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## Example Use Cases
 
-## Release Notes
+- Find email addresses in your codebase
+- Search for specific URL patterns
+- Locate phone numbers with various formats
+- Find HTML tags with specific attributes
+- Match dates in specific formats
+- Search for function declarations
+- Find variable naming patterns
 
-Users appreciate release notes as you update your extension.
+## Contributing
 
-### 1.0.0
+Found a bug or have a suggestion? Please feel free to:
 
-Initial release of ...
+1. Open an issue on [GitHub](https://github.com/abdxdev/ai-regex-search/issues)
+2. Submit a pull request with your improvements
+3. Share your feedback and ideas
 
-### 1.0.1
+## Repository
 
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Find the source code and contribute on [GitHub](https://github.com/abdxdev/ai-regex-search).

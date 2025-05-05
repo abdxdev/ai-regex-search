@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="media/icon.png" height="150" />
+<img src="https://github.com/abdxdev/ai-regex-search/blob/main/media/icon.png?raw=true" height="150" />
 
 <h1 align="center">AI Regex Search</h1>
 
@@ -12,7 +12,7 @@
 
 AI Regex Search is a VS Code extension that converts natural language descriptions into regular expressions using Google's Gemini AI. Simply describe the pattern you want to find, and let AI generate the perfect regex for your search.
 
-![Demo](media/other/demo.gif)
+![Demo](https://github.com/abdxdev/ai-regex-search/blob/main/media/other/demo.gif?raw=true)
 
 ## Note
 
